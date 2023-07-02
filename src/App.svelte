@@ -28,6 +28,14 @@
         loading = false;
       });
   }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      searchDictionary();
+    }
+  });
+
+
 </script>
 
 <main>
@@ -156,7 +164,7 @@
     h1 {
       font-size: 20px;
     }
-    
+
     .search-container{
       flex-direction: column;
       gap: 10px;
