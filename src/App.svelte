@@ -31,7 +31,9 @@
 </script>
 
 <main>
-  <img src="wordlify-logo.png" alt="logo">
+  <div class="logodiv">
+    <img src="wordlify-logo.png" alt="logo">
+  </div>
   <h1>Dictionary App</h1>
   <div class="container">
     <div class="search-container">
@@ -51,6 +53,10 @@
 </main>
 
 <style>
+  :root{
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
   @font-face {
       font-family: 'Poppins';
       font-style: normal;
@@ -78,6 +84,11 @@
     justify-content: center;
   }
 
+  .logodiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   img{
     width: 400px;
     margin-bottom: 20px;
@@ -86,6 +97,7 @@
   h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .search-container {
@@ -98,10 +110,13 @@
 
   input {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: transparent;;
     min-width: 200px;
     font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    caret-color: #fff;
   }
 
   button {
@@ -130,4 +145,24 @@
   p {
     font-size: 14px;
   }
+
+  @media (max-width: 768px) {
+    img{
+      width: 300px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .result-container {
+      width: 250px;
+    }
+    .search-container{
+      flex-direction: column;
+      gap: 10px;
+    }
+    button{
+      width: 100%;
+    }
+  }
+
 </style>
