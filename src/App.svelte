@@ -12,7 +12,7 @@
 
     if (cache[searchQuery.toLowerCase()]) {
       searchQueryShow = searchQuery;
-      searchResult = cache[searchQuery];
+      searchResult = cache[searchQuery.toLowerCase()];
       loading = false;
       return;
     }
