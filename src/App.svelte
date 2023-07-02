@@ -73,6 +73,8 @@
       <p>Loading...</p>
     {/if}
   </div>
+
+  <p style="text-align: center; margin-top: 20px;">Made with 🧠 by <a href="https://github.com/Lakshit-Chiranjiv">Lakshit CS</a></p>
 </main>
 
 <style>
@@ -123,6 +125,12 @@
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
   }
 
   .search-container {
