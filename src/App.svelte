@@ -7,6 +7,9 @@
   let cache = {};
 
   function searchDictionary() {
+    if (!searchQuery) {
+      return;
+    }
     loading = true;
     searchResult = "";
 
