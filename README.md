@@ -1,47 +1,52 @@
-# Svelte + Vite
+# Wordify
+---
 
-This template should help get you started developing with Svelte in Vite.
+## What is Wordify?
+Wordlify is a single page dictionary application which finds the meaning of the word entered by the user. It also provides the user with the synonyms and antonyms of the word. On top of that, it also provides cached results for the words searched by the user. Its simple and easy to use interface makes it a great tool for students and teachers alike.
 
-## Recommended IDE Setup
+![WordlifyLogo](./public/wordlify.png)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+### Tech Stack
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=black) &nbsp;
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=black) &nbsp;
+![Svelte](https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=black) &nbsp;
+![API Ninjas](https://img.shields.io/badge/API%20Ninjas-355485?style=for-the-badge&logo=apininja&logoColor=black) &nbsp;
 
-## Need an official Svelte framework?
+### Deployment
+The application is deployed on [Netlify](https://www.netlify.com/).
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=black) &nbsp;
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=black) &nbsp;
 
-## Technical considerations
+### Installation and Contribution
+1. Clone the repository
+```bash
+git clone https://github.com/Lakshit-Chiranjiv/wordlify.git
 
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `checkJs` in the JS template?**
-
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+cd wordlify
 ```
+
+2. Install the dependencies
+```bash
+npm install
+```
+
+3. Create a .env file and add your APINinjas API key
+```bash
+touch .env
+```
+```env
+VITE_API_NINJA_APIKEY=YOUR_API_KEY
+```
+
+4. Run the application
+```bash
+npm run dev
+```
+
+### Contributing
+
+Contributions and suggestions are welcome! Please fork the repository, create a new branch and send a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## Thank you for visiting! 😄🔥
