@@ -101,6 +101,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     min-width: 200px;
+    font-family: 'Poppins', sans-serif;
   }
 
   button {
