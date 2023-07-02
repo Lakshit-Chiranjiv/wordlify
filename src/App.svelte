@@ -76,6 +76,8 @@
   main{
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
   }
   main .container {
     display: flex;
@@ -117,6 +119,7 @@
     outline: none;
     border-bottom: 1px solid #fff;
     caret-color: #fff;
+    color: #fff;
   }
 
   button {
@@ -133,7 +136,7 @@
     border-radius: 4px;
     padding: 20px;
     background-color: #7e7e7e;
-    width: 300px;
+    width: 90%;
     text-align: center;
   }
 
@@ -146,16 +149,14 @@
     font-size: 14px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 496px) {
     img{
       width: 300px;
     }
     h1 {
       font-size: 20px;
     }
-    .result-container {
-      width: 250px;
-    }
+    
     .search-container{
       flex-direction: column;
       gap: 10px;
