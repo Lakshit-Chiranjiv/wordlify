@@ -4,9 +4,20 @@
   let searchResult = "";
   let loading = false;
 
+  let cache = {};
+
   function searchDictionary() {
     loading = true;
     searchResult = "";
+
+    if (cache[searchQuery.toLowerCase()]) {
+      searchQueryShow = searchQuery;
+      searchResult = cache[searchQuery];
+      loading = false;
+      return;
+    }
+
+    searchQueryShow = searchQuery;
     fetch(`https://api.api-ninjas.com/v1/dictionary?word=${searchQuery}`, {
       headers: {
         'X-Api-Key': import.meta.env.VITE_API_NINJA_APIKEY
@@ -15,11 +26,12 @@
       .then((res) => res.json())
       .then((data) => {
         if(data.valid){
-          searchQueryShow = searchQuery;
           searchResult = data.definition
+          cache[searchQuery.toLowerCase()] = data.definition;
         }
         else{
           searchResult = "No result found";
+          cache[searchQuery.toLowerCase()] = "No result found";
         }
         loading = false;
       })
@@ -137,6 +149,16 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+  }
+
+  button:active {
+    transform: scale(0.95);
   }
 
   .result-container {
