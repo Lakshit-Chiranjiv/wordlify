@@ -4,7 +4,7 @@
 ## What is Wordify?
 Wordlify is a single page dictionary application which finds the meaning of the word entered by the user. It also provides the user with the synonyms and antonyms of the word. On top of that, it also provides cached results for the words searched by the user. Its simple and easy to use interface makes it a great tool for students and teachers alike.
 
-![WordlifyLogo](./public/wordlify.png)
+[![WordlifyLogo](./public/wordlify.png)](https://wordlify-lcs.netlify.app/)
 
 ### Tech Stack
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;
@@ -14,7 +14,7 @@ Wordlify is a single page dictionary application which finds the meaning of the 
 ![API Ninjas](https://img.shields.io/badge/API%20Ninjas-355485?style=for-the-badge&logo=apininja&logoColor=black) &nbsp;
 
 ### Deployment
-The application is deployed on [Netlify](https://www.netlify.com/).
+The application is deployed on [Netlify](https://www.netlify.com/). You can visit the application [here](https://wordlify-lcs.netlify.app/).
 
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=black) &nbsp;
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=black) &nbsp;
@@ -50,3 +50,6 @@ npm run dev
 Contributions and suggestions are welcome! Please fork the repository, create a new branch and send a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Thank you for visiting! 😄🔥
+Here's a potato for you 🥔
+
+![Potato](https://media.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif)
